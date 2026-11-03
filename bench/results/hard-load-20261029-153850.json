@@ -1,0 +1,56 @@
+[
+  {
+    "name": "openai/gpt-6-luna-decisions",
+    "concurrency": 1,
+    "n": 3,
+    "errors": 0,
+    "p50_ms": 448.1262500048615,
+    "p95_ms": 472.37816703272983,
+    "max_ms": 472.37816703272983
+  },
+  {
+    "name": "openai/gpt-6-luna-decisions",
+    "concurrency": 8,
+    "n": 24,
+    "errors": 0,
+    "p50_ms": 346.76904103253037,
+    "p95_ms": 695.5807500053197,
+    "max_ms": 868.8732910086401
+  },
+  {
+    "name": "openai/gpt-6-luna-decisions",
+    "concurrency": 24,
+    "n": 72,
+    "errors": 0,
+    "p50_ms": 311.2854170030914,
+    "p95_ms": 781.8585410132073,
+    "max_ms": 3067.1114579890855
+  },
+  {
+    "name": "google/gemma-4-31b-it",
+    "concurrency": 1,
+    "n": 3,
+    "errors": 0,
+    "p50_ms": 535.7425829861313,
+    "p95_ms": 538.1498750066385,
+    "max_ms": 538.1498750066385
+  },
+  {
+    "name": "google/gemma-4-31b-it",
+    "concurrency": 8,
+    "n": 24,
+    "errors": 0,
+    "p50_ms": 636.6756670176983,
+    "p95_ms": 845.4304169863462,
+    "max_ms": 856.0345000005327
+  },
+  {
+    "name": "google/gemma-4-31b-it",
+    "concurrency": 24,
+    "n": 72,
+    "errors": 0,
+    "p50_ms": 826.1539170052856,
+    "p95_ms": 1470.1567910378799,
+    "max_ms": 1537.0395409991033
+  }
+]

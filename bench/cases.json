@@ -1,0 +1,298 @@
+[
+  {
+    "id": "gives-name",
+    "transcript": "assistant: Hi, I'm Morgan with Acme Commercial Insurance. What's the legal name of your business?\nuser: It's Riverside Bakery LLC.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "asks-for-person",
+    "transcript": "assistant: What's the legal name of your business?\nuser: Can I just talk to a real person please?",
+    "handoff": true,
+    "intent": null,
+    "frustration": 1,
+    "confirmed": null
+  },
+  {
+    "id": "angry-human",
+    "transcript": "assistant: Can you confirm the phone number is five five five, two one two, four four nine eight?\nuser: No! I already told you it's four four eight nine. Get me a human, this is ridiculous.",
+    "handoff": true,
+    "intent": null,
+    "frustration": 2,
+    "confirmed": false
+  },
+  {
+    "id": "person-in-name",
+    "transcript": "assistant: What's the legal name of your business?\nuser: Real People Staffing Incorporated.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "hr-person",
+    "transcript": "assistant: How many employees do you have?\nuser: Twelve, and one of them is our HR person who handles benefits.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "human-then-retract",
+    "transcript": "assistant: What's the approximate annual revenue?\nuser: Should I talk to someone about that? Actually never mind, it's about eight hundred thousand.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "agent-question",
+    "transcript": "assistant: Which coverage are you looking for today?\nuser: Wait, am I talking to a bot or a person?",
+    "handoff": false,
+    "intent": "ask_question",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "which-coverage",
+    "transcript": "assistant: Which coverage are you looking for: general liability, workers' compensation, commercial auto, or a business owner's policy?\nuser: Honestly I don't know. Which one do you think I need for a food truck?",
+    "handoff": false,
+    "intent": "coverage_advice",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "is-it-covered",
+    "transcript": "assistant: What's the ZIP code of your main location?\nuser: Nine four one one oh. Oh, and if a customer slips on my floor, would that be covered?",
+    "handoff": false,
+    "intent": "coverage_advice",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "how-much",
+    "transcript": "assistant: Which coverage are you looking for?\nuser: General liability. How much coverage should I get, like a million?",
+    "handoff": false,
+    "intent": "coverage_advice",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "what-is-revenue",
+    "transcript": "assistant: What's the approximate annual revenue?\nuser: Do you mean gross revenue or profit?",
+    "handoff": false,
+    "intent": "ask_question",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "how-long",
+    "transcript": "assistant: How many employees do you have?\nuser: Before I answer, how long is this whole thing going to take?",
+    "handoff": false,
+    "intent": "ask_question",
+    "frustration": 1,
+    "confirmed": null
+  },
+  {
+    "id": "grab-docs",
+    "transcript": "assistant: What's the approximate annual revenue?\nuser: Hang on, let me grab my tax return.",
+    "handoff": false,
+    "intent": "needs_time",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "one-sec",
+    "transcript": "assistant: What's the ZIP code of your main location?\nuser: One sec, someone's at the door.",
+    "handoff": false,
+    "intent": "needs_time",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "weather",
+    "transcript": "assistant: How many employees do you have?\nuser: Crazy storm out here today, huh? Is it raining where you are?",
+    "handoff": false,
+    "intent": "off_topic",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "sports",
+    "transcript": "assistant: What's the legal name of your business?\nuser: Did you see the game last night?",
+    "handoff": false,
+    "intent": "off_topic",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "confirm-yes",
+    "transcript": "assistant: I have your phone number as five five five, two one two, four four eight nine. Is that right?\nuser: Yep, that's it.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": true
+  },
+  {
+    "id": "impatient-answer",
+    "transcript": "assistant: Just to confirm, that's twelve employees?\nuser: Yes, twelve. I said that already. Can we move on?",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 1,
+    "confirmed": null
+  },
+  {
+    "id": "frustrated-no-handoff",
+    "transcript": "assistant: Can you repeat the ZIP code?\nuser: This is the third time. Nine four one one oh. Are you even listening?",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 2,
+    "confirmed": null
+  },
+  {
+    "id": "manager-call",
+    "transcript": "assistant: Which coverage are you looking for?\nuser: Can you have an actual agent call me back instead? I'd rather do this with a person.",
+    "handoff": true,
+    "intent": null,
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "multi-turn-human",
+    "transcript": "assistant: What's the legal name of your business?\nuser: Bright Path Daycare.\nassistant: Thanks. What's the business phone number?\nuser: Five five five, three three zero, one two one two.\nassistant: I have five five five, three three zero, one two one two. Is that right?\nuser: Yes. Look, I have a lot of questions about liability with kids, can I just speak to a licensed agent?",
+    "handoff": true,
+    "intent": "coverage_advice",
+    "frustration": 0,
+    "confirmed": true
+  },
+  {
+    "id": "multi-turn-earlier-human",
+    "transcript": "assistant: What's the legal name of your business?\nuser: Can I talk to a person?\nassistant: I can connect you, or I can take your details first so the team has them ready. Which would you prefer?\nuser: Fine, let's do the details. It's Bright Path Daycare.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 1,
+    "confirmed": null
+  },
+  {
+    "id": "indirect-callback",
+    "transcript": "assistant: Which coverage are you looking for?\nuser: Could someone from your office just call me back later?",
+    "handoff": true,
+    "intent": null,
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "indirect-manager",
+    "transcript": "assistant: What's the approximate annual revenue?\nuser: Is there a manager or somebody there I could go over this with?",
+    "handoff": true,
+    "intent": null,
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "indirect-licensed",
+    "transcript": "assistant: Which coverage are you looking for?\nuser: I'd honestly feel better doing this with someone who's licensed.",
+    "handoff": true,
+    "intent": null,
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "indirect-number",
+    "transcript": "assistant: How many employees do you have?\nuser: Do you have a number where I can reach an actual agent during business hours?",
+    "handoff": true,
+    "intent": null,
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "indirect-owner",
+    "transcript": "assistant: What's the legal name of your business?\nuser: Can the owner of the agency give me a call?",
+    "handoff": true,
+    "intent": null,
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "who-reviews",
+    "transcript": "assistant: Which coverage are you looking for?\nuser: General liability. Will a person look over this before I get a quote?",
+    "handoff": false,
+    "intent": "ask_question",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "my-accountant",
+    "transcript": "assistant: What's the approximate annual revenue?\nuser: My accountant has that number. Let me text her real quick.",
+    "handoff": false,
+    "intent": "needs_time",
+    "frustration": 0,
+    "confirmed": null
+  },
+  {
+    "id": "confirm-mhm",
+    "transcript": "assistant: I have your phone number as five five five, two one two, four four eight nine. Is that right?\nuser: Mm-hmm.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": true
+  },
+  {
+    "id": "confirm-thats-right",
+    "transcript": "assistant: I have your ZIP code as nine four one one oh. Is that right?\nuser: That's right.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": true
+  },
+  {
+    "id": "confirm-yes-and-more",
+    "transcript": "assistant: I have your phone number as five five five, two one two, four four eight nine. Is that right?\nuser: Yes. And that's also our fax line, if it matters.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": true
+  },
+  {
+    "id": "correct-digits",
+    "transcript": "assistant: I have your phone number as five five five, two one two, four four eight nine. Is that right?\nuser: Close, but it's four four nine eight at the end.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": false
+  },
+  {
+    "id": "correct-after-yes",
+    "transcript": "assistant: I have your ZIP code as nine four one one oh. Is that right?\nuser: Yeah, wait, no. It's nine four one one two.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": false
+  },
+  {
+    "id": "plain-no",
+    "transcript": "assistant: I have your ZIP code as nine four one one oh. Is that right?\nuser: No.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": false
+  },
+  {
+    "id": "unsure",
+    "transcript": "assistant: I have your phone number as five five five, two one two, four four eight nine. Is that right?\nuser: Hmm, I think so? Let me double check my card.",
+    "handoff": false,
+    "intent": "needs_time",
+    "frustration": 0,
+    "confirmed": false
+  },
+  {
+    "id": "yes-to-wrong-question",
+    "transcript": "assistant: Do you have more than ten employees?\nuser: Yes.",
+    "handoff": false,
+    "intent": "provide_info",
+    "frustration": 0,
+    "confirmed": false
+  }
+]
